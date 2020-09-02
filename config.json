@@ -4,8 +4,6 @@
 		"LISTEN":8000,
 		"OPEN_CONNS":50,
 		"IDLE_CONNS":50,
-		"CA_URL":"http://10.196.1.1:8080/",
-		
 		"LISTEN_IP":"127.0.0.1:9080"
 	}
 }
