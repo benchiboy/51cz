@@ -1,0 +1,13 @@
+{
+	"config":{
+		"DB_URL": "mldeploy:123456@tcp(192.168.70.3:3306)/crf_ca_db_uat",
+		"LISTEN":8000,
+		"OPEN_CONNS":50,
+		"IDLE_CONNS":50,
+		"CA_URL":"http://10.196.1.1:8080/",
+		"API_ID":"crfchina_test",
+		"API_KEY":"4e249a9cb180dfbdc61b81883850f21a",
+		"OSS_BUCKET":"xrf",
+		"LISTEN_IP":"127.0.0.1:9080"
+	}
+}
