@@ -27,7 +27,7 @@ var (
 func init() {
 	log.SetFlags(log.Ldate | log.Lshortfile | log.Lmicroseconds)
 	log.SetOutput(io.MultiWriter(os.Stdout, &lumberjack.Logger{
-		Filename:   "ca-gate.log",
+		Filename:   "51cz.log",
 		MaxSize:    500, // megabytes
 		MaxBackups: 50,
 		MaxAge:     90, //days
@@ -49,8 +49,11 @@ func init() {
 
 func main() {
 	router := gin.Default()
-	// router.LoadHTMLGlob("templates/*")
-	// router.MaxMultipartMemory = 8 << 20 // 8 MiB
+	router.LoadHTMLGlob("templates/*")
+
+	router.MaxMultipartMemory = 8 << 20 // 8 MiB
+
+	router.GET("/", index)
 
 	router.POST("/test", test)
 

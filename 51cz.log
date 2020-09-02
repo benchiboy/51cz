@@ -1,0 +1,2 @@
+2020/09/02 17:26:34.271993 main.go:37: config file == config.json
+2020/09/02 17:26:34.443245 dbcomm.go:29: Database Connected successful!
