@@ -122,10 +122,6 @@ const (
 	KEY_KAFKA_HOST        = "kafka_host"
 	KEY_DATA_REPORT_TOPIC = "kafka_dataReport_topic"
 	KEY_AGRT_REPORT_TOPIC = "kafka_agrtReport_topic"
-
-	KEY_OSS_ACCESS_ID  = "LTAI4FzqevmmnSo6Lidk9oT8"
-	KEY_OSS_ACCESS_KEY = "USzAKvxun3w9y0WqPv0DZOE7THMvUN"
-	KEY_OSS_END_POINT  = "oss-cn-shanghai.aliyuncs.com"
 )
 
 /*
