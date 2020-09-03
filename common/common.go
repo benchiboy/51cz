@@ -62,13 +62,6 @@ const (
 	SYSTEM_CAGATE = "ca-gate"
 	SYSTEM_FTS2   = "FTS2"
 
-	GROUP_OSS = "oss"
-
-	FIELD_LOGIN_PASS  = "user_pwd"
-	FIELD_ERRORS      = "pwderr_cnt"
-	FIELD_UPDATE_TIME = "update_date"
-	FIELD_PROC_STATUS = "status"
-
 	EMPTY_STRING = ""
 )
 

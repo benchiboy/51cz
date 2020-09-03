@@ -15,5 +15,6 @@ func index(c *gin.Context) {
 
 func test(c *gin.Context) {
 	log.Println("ss")
+
 	c.JSON(http.StatusOK, "")
 }
