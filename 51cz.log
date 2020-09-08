@@ -8,3 +8,79 @@
 2020/09/07 17:43:28.861105 dbcomm.go:29: Database Connected successful!
 2020/09/07 17:45:25.795646 main.go:37: config file == config.json
 2020/09/07 17:45:25.964654 dbcomm.go:29: Database Connected successful!
+2020/09/08 17:14:20.232152 main.go:37: config file == config.json
+2020/09/08 17:14:20.388670 dbcomm.go:29: Database Connected successful!
+2020/09/08 17:15:52.516126 main.go:37: config file == config.json
+2020/09/08 17:15:52.685064 dbcomm.go:29: Database Connected successful!
+2020/09/08 17:16:20.673783 main.go:37: config file == config.json
+2020/09/08 17:16:20.832035 dbcomm.go:29: Database Connected successful!
+2020/09/08 17:19:22.277736 control.go:60: getLogos
+2020/09/08 17:19:22.277887 config.go:260: Select ===> Select id,key,value,insert_time,update_time,version from config where 1=1 
+2020/09/08 17:19:22.441042 config.go:264: Error  ===> Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'key,value,insert_time,update_time,version from config where 1=1' at line 1
+2020/09/08 17:19:22.441200 control.go:64: [] Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'key,value,insert_time,update_time,version from config where 1=1' at line 1
+2020/09/08 17:21:05.121252 main.go:37: config file == config.json
+2020/09/08 17:21:05.273036 dbcomm.go:29: Database Connected successful!
+2020/09/08 17:21:08.902334 control.go:60: getLogos
+2020/09/08 17:21:08.902492 config.go:260: Select ===> Select id,key,value,insert_time,update_time,version from config where 1=1 
+2020/09/08 17:21:09.062678 config.go:264: Error  ===> Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'key,value,insert_time,update_time,version from config where 1=1' at line 1
+2020/09/08 17:21:09.062779 control.go:64: [] Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'key,value,insert_time,update_time,version from config where 1=1' at line 1
+2020/09/08 17:24:53.204184 main.go:37: config file == config.json
+2020/09/08 17:24:53.375142 dbcomm.go:29: Database Connected successful!
+2020/09/08 17:24:58.503791 control.go:60: getLogos
+2020/09/08 17:24:58.503920 config.go:287: Select ===> Select id,key_name,key_value,insert_time,update_time,version from config where 1=1 
+2020/09/08 17:24:58.663219 config.go:291: Error  ===> Error 1146: Table 'crf_ca_db_uat.config' doesn't exist
+2020/09/08 17:24:58.663349 control.go:64: [] Error 1146: Table 'crf_ca_db_uat.config' doesn't exist
+2020/09/08 17:26:01.739094 main.go:37: config file == config.json
+2020/09/08 17:26:01.886275 dbcomm.go:29: Database Connected successful!
+2020/09/08 17:26:05.408052 control.go:60: getLogos
+2020/09/08 17:26:05.408145 config.go:287: Select ===> Select id,key_name,key_value,insert_time,update_time,version from config where 1=1 
+2020/09/08 17:26:05.568610 config.go:301: Elapsed===> &{0xc0001f20c0 1 0 [{1 logo1 /image/s5.png 2020 0 0} {2 logo2 /image/s5.png 0 0 0} {3 logo3 /image/s5.png 0 0 0}]}
+2020/09/08 17:26:05.568685 config.go:303: Elapsed===> 160.529545ms
+2020/09/08 17:26:05.568758 control.go:64: [{1 logo1 /image/s5.png 2020 0 0} {2 logo2 /image/s5.png 0 0 0} {3 logo3 /image/s5.png 0 0 0}] <nil>
+2020/09/08 17:32:06.233012 main.go:37: config file == config.json
+2020/09/08 17:32:06.394807 dbcomm.go:29: Database Connected successful!
+2020/09/08 17:32:10.640693 common.go:54: ========》 [getLogos]
+2020/09/08 17:32:10.640866 config.go:287: Select ===> Select id,key_name,key_value,insert_time,update_time,version from config where 1=1 
+2020/09/08 17:32:10.788675 config.go:301: Elapsed===> &{0xc0002d8000 1 0 [{1 logo1 /image/s5.png 2020 0 0} {2 logo2 /image/s5.png 0 0 0} {3 logo3 /image/s5.png 0 0 0}]}
+2020/09/08 17:32:10.788745 config.go:303: Elapsed===> 147.869865ms
+2020/09/08 17:32:10.788953 common.go:58: 《======== [getLogos]
+2020/09/08 17:33:04.227725 main.go:37: config file == config.json
+2020/09/08 17:33:04.377250 dbcomm.go:29: Database Connected successful!
+2020/09/08 17:33:06.805637 common.go:54: ========》 [getLogos]
+2020/09/08 17:33:06.805788 config.go:287: Select ===> Select id,key_name,key_value,insert_time,update_time,version from config where 1=1 
+2020/09/08 17:33:06.962007 config.go:301: Elapsed===> &{0xc0002e6000 1 0 [{1 logo1 /image/s5.png 2020 0 0} {2 logo2 /image/s5.png 0 0 0} {3 logo3 /image/s5.png 0 0 0}]}
+2020/09/08 17:33:06.962081 config.go:303: Elapsed===> 156.284299ms
+2020/09/08 17:33:06.962371 common.go:58: 《======== [getLogos]
+2020/09/08 17:35:56.013888 main.go:37: config file == config.json
+2020/09/08 17:35:56.177193 dbcomm.go:29: Database Connected successful!
+2020/09/08 17:36:05.052008 main.go:37: config file == config.json
+2020/09/08 17:36:05.217824 dbcomm.go:29: Database Connected successful!
+2020/09/08 17:41:51.173205 main.go:37: config file == config.json
+2020/09/08 17:41:51.328721 dbcomm.go:29: Database Connected successful!
+2020/09/08 17:42:27.601411 main.go:37: config file == config.json
+2020/09/08 17:42:27.766425 dbcomm.go:29: Database Connected successful!
+2020/09/08 17:43:05.282267 common.go:54: ========》 [getUser]
+2020/09/08 17:43:05.282454 users.go:231: Select ===> Select id,user_id,user_name,phone,head_image,insert_time,update_time,version from users where 1=1  
+2020/09/08 17:43:05.428496 common.go:58: 《======== [getUser]
+2020/09/08 17:44:06.324707 common.go:54: ========》 [getUser]
+2020/09/08 17:44:06.324815 users.go:231: Select ===> Select id,user_id,user_name,phone,head_image,insert_time,update_time,version from users where 1=1  and user_id='111' 
+2020/09/08 17:44:06.473428 common.go:58: 《======== [getUser]
+2020/09/08 17:44:20.326294 common.go:54: ========》 [getUser]
+2020/09/08 17:44:20.334237 users.go:231: Select ===> Select id,user_id,user_name,phone,head_image,insert_time,update_time,version from users where 1=1  and user_id='1112222' 
+2020/09/08 17:44:20.487631 common.go:58: 《======== [getUser]
+2020/09/08 17:55:17.897734 main.go:37: config file == config.json
+2020/09/08 17:55:18.050883 dbcomm.go:29: Database Connected successful!
+2020/09/08 17:56:32.073053 main.go:37: config file == config.json
+2020/09/08 17:56:32.262991 dbcomm.go:29: Database Connected successful!
+2020/09/08 17:56:57.031532 main.go:37: config file == config.json
+2020/09/08 17:56:57.177825 dbcomm.go:29: Database Connected successful!
+2020/09/08 18:08:56.567736 main.go:37: config file == config.json
+2020/09/08 18:08:56.716819 dbcomm.go:29: Database Connected successful!
+2020/09/08 18:10:32.817412 main.go:37: config file == config.json
+2020/09/08 18:10:32.986831 dbcomm.go:29: Database Connected successful!
+2020/09/08 18:10:35.366281 common.go:54: ========》 [setUser]
+2020/09/08 18:10:35.366617 users.go:517: Insert ===> Insert into  users(user_name,phone)  values(?,?)
+2020/09/08 18:10:35.581214 users.go:539: Insert ===> LastInsertId: 1
+2020/09/08 18:10:35.581284 users.go:542: Insert ===> RowsAffected: 1
+2020/09/08 18:10:35.581331 users.go:546: Elapsed===> 214.703816ms
+2020/09/08 18:10:35.581522 common.go:58: 《======== [setUser]

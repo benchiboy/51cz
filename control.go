@@ -2,6 +2,10 @@
 package main
 
 import (
+	"51cz/common"
+	"51cz/service/config"
+	"51cz/service/dbcomm"
+	"51cz/service/users"
 	"log"
 	"net/http"
 
@@ -29,44 +33,63 @@ type Orders struct {
 	Answer  string `json:"answer"`
 }
 
+/*
+	首页LOGO
+*/
+type Logo struct {
+	Logo string `json:"logo"`
+}
+
 func index(c *gin.Context) {
 	log.Println("ss")
 	c.HTML(http.StatusOK, "login.tmpl", gin.H{"title": ""})
 }
 
-func test(c *gin.Context) {
-	log.Println("ss")
-	c.JSON(http.StatusOK, "")
+func getLogos(c *gin.Context) {
+	common.PrintHead("getLogos")
+	var search config.Search
+	r := config.New(dbcomm.GetDB(), config.DEBUG)
+	if l, err := r.GetList(search); err != nil {
+		c.JSON(http.StatusOK, gin.H{"err_code": 400, "err_msg": err.Error()})
+	} else {
+		c.JSON(http.StatusOK, l)
+	}
+	common.PrintTail("getLogos")
 }
 
 /*
+	修改用户信息
+*/
+func setUser(c *gin.Context) {
+	common.PrintHead("setUser")
+	var u users.User
+	if err := c.ShouldBindJSON(&u); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"err_code": 400, "err_msg": err.Error()})
+		return
+	}
+	r := users.New(dbcomm.GetDB(), users.DEBUG)
+	if err := r.InsertEntity(u, nil); err != nil {
+		c.JSON(http.StatusOK, gin.H{"err_code": 400, "err_msg": err.Error()})
+	} else {
+		c.JSON(http.StatusOK, gin.H{"err_code": 0000, "err_msg": "success"})
+	}
 
- */
-func getQuestionItems(c *gin.Context) {
-	log.Println("ss")
-	c.JSON(http.StatusOK, "")
+	common.PrintTail("setUser")
 }
 
 /*
-
- */
-func getQuestion(c *gin.Context) {
-	log.Println("ss")
-	c.JSON(http.StatusOK, "")
-}
-
-/*
-
- */
-func getNextQuestion(c *gin.Context) {
-	log.Println("ss")
-	c.JSON(http.StatusOK, "")
-}
-
-/*
-
- */
-func putQuestionAnswer(c *gin.Context) {
-	log.Println("ss")
-	c.JSON(http.StatusOK, "")
+	得到用户信息
+*/
+func getUser(c *gin.Context) {
+	common.PrintHead("getUser")
+	userId := c.Query("user_id")
+	var search users.Search
+	search.UserId = userId
+	r := users.New(dbcomm.GetDB(), users.DEBUG)
+	if u, err := r.Get(search); err != nil {
+		c.JSON(http.StatusOK, gin.H{"err_code": 400, "err_msg": err.Error()})
+	} else {
+		c.JSON(http.StatusOK, u)
+	}
+	common.PrintTail("getUser")
 }

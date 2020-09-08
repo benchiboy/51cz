@@ -56,7 +56,11 @@ func main() {
 
 	router.GET("/", index)
 
-	router.POST("/test", test)
+	router.POST("/getlogos", getLogos)
+
+	router.GET("/getuser", getUser)
+
+	router.POST("/setuser", setUser)
 
 	router.Run(":8090")
 
