@@ -2,3 +2,9 @@
 2020/09/02 17:26:34.443245 dbcomm.go:29: Database Connected successful!
 2020/09/07 17:21:45.789494 main.go:37: config file == config.json
 2020/09/07 17:21:45.953478 dbcomm.go:29: Database Connected successful!
+2020/09/07 17:22:55.907761 main.go:37: config file == config.json
+2020/09/07 17:22:56.070244 dbcomm.go:29: Database Connected successful!
+2020/09/07 17:43:28.697667 main.go:37: config file == config.json
+2020/09/07 17:43:28.861105 dbcomm.go:29: Database Connected successful!
+2020/09/07 17:45:25.795646 main.go:37: config file == config.json
+2020/09/07 17:45:25.964654 dbcomm.go:29: Database Connected successful!

@@ -49,6 +49,7 @@ func init() {
 
 func main() {
 	router := gin.Default()
+
 	router.LoadHTMLGlob("templates/*")
 
 	router.MaxMultipartMemory = 8 << 20 // 8 MiB
